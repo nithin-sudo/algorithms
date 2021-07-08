@@ -8,7 +8,8 @@ public class MergeSort {
      * @param middleIndex
      * @param higherIndex
      */
-    public void sortStringArray(String sortStringArray[], int lowerIndex, int middleIndex, int higherIndex) {
+    public
+    void sortStringArray(String sortStringArray[], int lowerIndex, int middleIndex, int higherIndex) {
 
         String temp[] = new String[higherIndex - lowerIndex + 1];
 
