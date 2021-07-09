@@ -5,7 +5,9 @@ public class Permutation {
     {
         if(left == right)
         {
-            System.out.println(string);
+
+            System.out.print(string + "\t");
+
         }
         else
         {
@@ -26,6 +28,7 @@ public class Permutation {
 
         return String.valueOf(charArray);
     }
+
     public static void stringPermutation(String str)
     {
         int n = str.length();
@@ -39,11 +42,11 @@ public class Permutation {
                 int quotient = temp / div;
                 int remainder = temp % div;
 
-                System.out.println(stringbuilder.charAt(remainder));
+                System.out.print(stringbuilder.charAt(remainder));
                 stringbuilder.deleteCharAt(remainder);
                 temp = quotient;
             }
-            System.out.println();
+            System.out.print("\t");
         }
     }
     public static int factorial(int n)
@@ -59,8 +62,9 @@ public class Permutation {
         String s = "ABC";
         int n = s.length();
         Permutation permutations = new Permutation();
-        System.out.println("the all possible combinations are :");
+        System.out.print("the all possible combinations  for recursion are :\t");
         permutations.calculate(s,0,n-1);
+        System.out.print("\nthe all possible combinations  for iterative are :\t");
         stringPermutation(s);
     }
 }
